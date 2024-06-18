@@ -1,7 +1,7 @@
 
 export default async function Page () {
 
-    await new Promise((resolve) => setTimeout(resolve, 100));
+    await new Promise((resolve) => setTimeout(resolve, 1000));
     //throw Error("Bazinga");
-    return (<div>Hello NextJS!</div>);
+    return (<div>Hello NextJS 18!</div>);
 }
