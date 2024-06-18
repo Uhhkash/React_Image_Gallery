@@ -1,12 +1,23 @@
 import { UnsplashImage } from "@/models/unsplash-image";
 import Image from "next/image";
 import styles from "./TopicPage.module.css";
+import { Metadata } from "next";
 
 // export const revalidate = 0;
+
+export function generateMetadata({ params: { topic } }: PageProps): Metadata {
+    return {
+        title: topic + " - NextJS 18 Image Gallery"
+    }
+}
 
 interface PageProps {
     params: { topic: string },
     
+}
+
+export function generateStaticParams () {
+    return ["health", "fitness", "coding"].map(topic => ({ topic }));
 }
 
 export default async function Page({ params: { topic }}: PageProps) {
