@@ -31,10 +31,11 @@
       "static/chunks/main-app.js",
       "static/chunks/app/_not-found/page.js"
     ],
-    "/hello/page": [
+    "/(SSR)/topics/[topic]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/hello/page.js"
+      "static/css/app/(SSR)/topics/[topic]/page.css",
+      "static/chunks/app/(SSR)/topics/[topic]/page.js"
     ]
   }
 }

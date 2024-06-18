@@ -11,12 +11,14 @@ export default function NavBar() {
         <Navbar bg="primary" variant="dark" sticky="top" expand="sm" collapseOnSelect>
             <Container>
                 <Navbar.Brand as={Link} href="/">
-                    NextJS Image-Gallery
+                    NextJS 18 Image-Gallery
                 </Navbar.Brand>
                  <Navbar.Toggle aria-controls="main-navbar" />
                   <Navbar.Collapse id="main-navbar">
                     <Nav>
-                        <Nav.Link as={Link} href="/hello" active={pathname == "/hello" }>Hello</Nav.Link>
+                        <Nav.Link as={Link} href="/static" active={pathname == "/static" }>Static</Nav.Link>
+                        <Nav.Link as={Link} href="/dynamic" active={pathname == "/dynamic" }>Dynamic</Nav.Link>
+                        <Nav.Link as={Link} href="/isr" active={pathname == "/isr" }>ISR</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
